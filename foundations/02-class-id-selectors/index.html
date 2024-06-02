@@ -7,11 +7,31 @@
     <title>Class and ID Selectors</title>
     <link rel="stylesheet" href="style.css">
   </head>
+  <style>
+    .p-class{
+      background-color: pink;
+      font-style: verdana;  
+    }
+    #t-id{
+      font-size: 240%;
+    }
+    #t2-id{
+      color:blue;
+      font-size: 360%;
+    }
+    #t3-id{
+      background-color: lightgreen;
+      font-size: 240%;
+      font-weight:800;
+    }
+
+    
+  </style>
   <body>
-    <p>Number 1 - I'm a class!</p>
-    <div>Number 2 - I'm one ID.</div>
-    <p>Number 3 - I'm a class, but cooler!</p>
-    <div>Number 4 - I'm another ID.</div>
-    <p>Number 5 - I'm a class!</p>
+    <p class="p-class">Number 1 - I'm a class!</p>
+    <div id="t2-id">Number 2 - I'm one ID.</div>
+    <p id="t-id" class="p-class">Number 3 - I'm a class, but cooler!</p>
+    <div id="t3-id">Number 4 - I'm another ID.</div>
+    <p class="p-class">Number 5 - I'm a class!</p>
   </body>
 </html>
